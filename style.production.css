@@ -1,0 +1,227 @@
+body {
+  background-color: darksalmon;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+  font-family: Poppins;
+}
+
+h1 {
+  font-size: 75px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 30px;
+}
+
+/* line height*/
+
+a {
+  color:aquamarine;
+}
+
+a:visited {
+  color:beige;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+a:active {
+  color:brown;
+}
+
+.a1, .a2, .a3 {
+  font-size: 20px;
+}
+
+.development, .table {
+  font-family: poppins;
+  font-size: 22px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 200px;
+}
+
+.header {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.list-style {
+  list-style-type: none;
+}
+
+.list-item {
+  text-align: right;
+}
+
+.footer {
+  font-size: 20px;
+}
+
+.index-footer {
+  text-align: center;
+  margin-bottom: 500px;
+}
+
+.index-footer-contact {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.about {
+  font-size: 25px;
+}
+
+.work {
+  font-size: 18px;
+}
+
+/*GRID*/
+.work-layout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0px 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 0px;
+     -moz-column-gap: 0px;
+          column-gap: 0px;
+  row-gap: 0px;
+
+}
+
+.work-grid {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 250px;
+}
+
+.contact {
+  margin: 20px;
+  text-align: center;
+}
+
+.send-button {
+  margin: 30px;
+}
+
+.easy-button {
+  font-family: inherit;
+  background-color: red;
+  color: white;
+  border: none;
+  height: 36px;
+  width: 150px;
+  margin-top: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+  -webkit-transition: backround-color 0.15s,
+    color 0.15s;
+  -o-transition: backround-color 0.15s,
+    color 0.15s;
+  transition: backround-color 0.15s,
+    color 0.15s;
+}
+.easy-button:hover {
+  background-color: gold;
+  color: red;
+}
+.easy-button:active {
+  background-color: blueviolet;
+  color: white;
+}
+.help-button {
+  font-family: inherit;
+  background-color: red;
+  color: white;
+  border: none;
+  height: 36px;
+  width: 150px;
+  margin-top: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+  -webkit-transition: opacity 0.15s;
+  -o-transition: opacity 0.15s;
+  transition: opacity 0.15s;
+}
+.help-button:hover {
+  opacity: 0.6;
+}
+.help-button:active {
+  opacity: 0.3;
+}
+
+.Milton-Logo, .Space-tiger {
+  width: 200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media all and (max-width :500px) {
+  .work-layout {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    display: inline-block;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .work {
+    font-size: 12px;
+  }
+
+  .Milton-Logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .Space-tiger {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media all and (min-width :500px) and (max-width :750px) {
+  .work-layout {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width :750px) {
+
+  h1 {
+    font-size: 22px;
+  }
+}
