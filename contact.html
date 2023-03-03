@@ -10,23 +10,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="style.production.css">
-  </head>
+    <link rel="stylesheet" type="text/css" href="style/styles.css">
+</head>
   <body>
     <header class="flex">
       <!--Main Logo-->
-      <img class="Milton-Logo" src="Milton-Logo.png" alt="logo">
-
-      <nav class="header">
-        <ul role="menubar" class="list-style">
-          <li role="presentation"><a href="index.html" role="menuitem">Home</a></li>
-          <li role="presentation"><a href="about.html" role="menuitem">About Jon</a></li>
-          <li role="presentation"><a href="contact.html" role="menuitem">Contact Jon</a></li>
-          <li role="presentation"><a href="work.html" role="menuitem">Work History</a></ul>
+      <img class="Milton-Logo" src="img/Milton-Logo.png" alt="logo">
+      <nav class="nav-contact">
+          <ul role="menubar" class="menu">
+            <li role="presentation" class="menu-item"><a href="index.html" role="menuitem" class="menu-item">Home</a></li>
+            <li role="presentation" class="menu-item"><a href="about.html" role="menuitem" class="menu-item">About Jon</a></li>
+            <li role="presentation" class="menu-item"><a href="contact.html" role="menuitem" class="menu-item">Contact Jon</a></li>
+            <li role="presentation" class="menu-item"><a href="work.html" role="menuitem" class="menu-item">Work History</a></li>
+          </ul>
       </nav>
     </header>
-
+    
     <h1>Contact</h1>
     
     <div class="contact">
@@ -37,51 +36,29 @@
       <br>
       <a href="mailto:office@careerfoundry.com">Contact me</a>
 
-      <div class="contact">
+      <div class="contact-e-mail">
       <form action method="post" id="contact-form">
         <label for="email" class="standard-label">Email: </label>
         <input id="email" type="email" placeholder="E-mail" required>
+      </form>
       </div>
 
-      <div class="contact">
+      <div class="contact-tel">
         <label for="tel" class="standard-label">Telephone: </label>
         <input id="tel" type="tel" placeholder="Number" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
       </div>
 
       <div class="contact">
-         <label for="message" class="standard-label">Message: </label>
-          <textarea id="message" required maxlength="240"></textarea>
-      <div>
-          <input type="submit" class="send-button" value="Send message">
+        <label for="message" class="standard-label-message">Message: </label>
+        <textarea id="message" required maxlength="240"></textarea>
       </div>
-      </form>
-    </div>
-
-
-
-      <footer class="index-footer-contact">
-        <p class="footer">Find me on</p>
-        <!--Github Logo-->
-        <?xml version="1.0" ?>
-        <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
-        <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <path clip-rule="evenodd" d="M16.003,0C7.17,0,0.008,7.162,0.008,15.997  c0,7.067,4.582,13.063,10.94,15.179c0.8,0.146,1.052-0.328,1.052-0.752c0-0.38,0.008-1.442,0-2.777  c-4.449,0.967-5.371-2.107-5.371-2.107c-0.727-1.848-1.775-2.34-1.775-2.34c-1.452-0.992,0.109-0.973,0.109-0.973  c1.605,0.113,2.451,1.649,2.451,1.649c1.427,2.443,3.743,1.737,4.654,1.329c0.146-1.034,0.56-1.739,1.017-2.139  c-3.552-0.404-7.286-1.776-7.286-7.906c0-1.747,0.623-3.174,1.646-4.292C7.28,10.464,6.73,8.837,7.602,6.634  c0,0,1.343-0.43,4.398,1.641c1.276-0.355,2.645-0.532,4.005-0.538c1.359,0.006,2.727,0.183,4.005,0.538  c3.055-2.07,4.396-1.641,4.396-1.641c0.872,2.203,0.323,3.83,0.159,4.234c1.023,1.118,1.644,2.545,1.644,4.292  c0,6.146-3.74,7.498-7.304,7.893C19.479,23.548,20,24.508,20,26c0,2,0,3.902,0,4.428c0,0.428,0.258,0.901,1.07,0.746  C27.422,29.055,32,23.062,32,15.997C32,7.162,24.838,0,16.003,0z" fill="#181616" fill-rule="evenodd"/><g/><g/><g/><g/><g/><g/>
-        </svg>
-        <!--TwitterLogo-->
-        <?xml version="1.0" ?>
-        <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-        <svg enable-background="new 0 0 56.693 56.693" height="35px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="35px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <path d="M28.348,5.157c-13.6,0-24.625,11.027-24.625,24.625c0,13.6,11.025,24.623,24.625,24.623c13.6,0,24.623-11.023,24.623-24.623  C52.971,16.184,41.947,5.157,28.348,5.157z M40.752,24.817c0.013,0.266,0.018,0.533,0.018,0.803c0,8.201-6.242,17.656-17.656,17.656  c-3.504,0-6.767-1.027-9.513-2.787c0.486,0.057,0.979,0.086,1.48,0.086c2.908,0,5.584-0.992,7.707-2.656  c-2.715-0.051-5.006-1.846-5.796-4.311c0.378,0.074,0.767,0.111,1.167,0.111c0.566,0,1.114-0.074,1.635-0.217  c-2.84-0.57-4.979-3.08-4.979-6.084c0-0.027,0-0.053,0.001-0.08c0.836,0.465,1.793,0.744,2.811,0.777  c-1.666-1.115-2.761-3.012-2.761-5.166c0-1.137,0.306-2.204,0.84-3.12c3.061,3.754,7.634,6.225,12.792,6.483  c-0.106-0.453-0.161-0.928-0.161-1.414c0-3.426,2.778-6.205,6.206-6.205c1.785,0,3.397,0.754,4.529,1.959  c1.414-0.277,2.742-0.795,3.941-1.506c-0.465,1.45-1.448,2.666-2.73,3.433c1.257-0.15,2.453-0.484,3.565-0.977  C43.018,22.849,41.965,23.942,40.752,24.817z"/>
-        </svg>
-        <!--LinkedIn Logo-->
-        <?xml version="1.0" ?>
-        <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-        <svg height="35px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="35px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#010101;"/>
-        </svg>
-      </footer>  
-    </div>
-    <script src="tota11y.min.js"></script>
+        <input type="submit" class="send-button" value="Send message">
+     </div>
+     <footer class="index-footer-contact">
+      <p class="footer">Find me on</p>
+      <img src="img/Link-in.png" class="link-in">
+     </footer>
+     <script src="js/tota11y.min.js"></script>
 
     <!--illustration-->
     

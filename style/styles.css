@@ -1,0 +1,275 @@
+
+body {
+  background-color: #4552e3;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+  font-family: Poppins;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* line height*/
+
+a {
+  color: #1c1405;
+}
+
+a:hover {
+color: beige;
+}
+
+a:visited {
+  color:#f5f5dc;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+a:active {
+  color:#a52a2a;
+}
+
+.a1, .a2, .a3 {
+  font-size: 20px;
+}
+
+.a1 {
+  display: flex;
+  width: 700px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.development, .table {
+  font-family: poppins;
+  font-size: 22px;
+}
+
+.link-in {
+  width: 150px;
+}
+
+.tiger-border {
+  margin-top: 15px;
+}
+
+.Space-tiger { /*float*/
+  width: 300px;
+  border-radius: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Header*/
+
+.Milton-Logo {
+  width: 120px;
+  border-radius: 60px;
+  margin-left: 3px;
+}
+
+.check-it {
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  font-size: 14px;
+}
+
+.flex { 
+  display: flex; /*fix flex*/
+  align-items: center;
+  height: 125px;
+  background-color: #1f253f;
+}
+
+.nav {
+  background-color: #8f5d1b;
+  width: 100%;
+}
+
+.menu {
+  display: flex; /*flex*/
+  flex-direction: row;
+  list-style-type: none;
+  }
+  
+.menu-item {
+  margin-left: 10px;
+  font-family: poppins;/*add width*/
+}  
+
+.nav-contact {
+  background-color: purple;
+  width: 100%;
+}
+
+.contact-tel {
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.send-button {
+  font-family: poppins;
+  background-color: purple;
+  color: #f5f5dc;
+  border: none;
+  height: 36px;
+  width: 200px;
+  border-radius: 150px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #1c1405;
+  color: #4552e3;
+}
+
+.standard-label {
+  font-family: poppins;
+}
+
+.standard-label-message { /*align*/
+  font-family: poppins;
+}
+
+.table {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.footer {
+  font-size: 20px;
+}
+
+.index-footer {
+  text-align: center;
+  margin-bottom: 500px;
+}
+
+.index-footer-contact {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-footer {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.work-footer {
+  margin-top: 10px;
+}
+
+.work {
+  font-size: 18px;
+  text-align: left;
+}
+
+/*GRID*/
+.work-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0px;
+  row-gap: 0px;
+
+}
+
+.work-grid {
+  align-items: center;
+  height: 250px;
+}
+
+.contact-e-mail {
+  padding: 20px;
+}
+
+.contact {
+  margin: 25px;
+  text-align: center;
+}
+
+.send-button {
+  margin: 30px;
+}
+
+
+/*Media queries*/
+
+
+@media all and (max-width :500px) {
+  .work-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    display: inline-block;
+  }
+
+  .menu {
+    padding-left: 10px;
+    margin: 0px;
+  }
+
+  .menu-item {
+    margin: 0px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .work {
+    font-size: 12px;
+  }
+
+  .Milton-Logo {
+    width: 120;
+  }
+
+  .Space-tiger {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media all and (min-width :500px) and (max-width :750px) {
+  .work-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .menu {
+    padding-left: 25px;
+  }
+}
+
+@media all and (max-width :750px) {
+  h1 {
+    font-size: 30px;
+  }
+}
